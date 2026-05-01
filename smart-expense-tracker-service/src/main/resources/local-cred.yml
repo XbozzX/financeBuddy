@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    username: postgres
+    password:
+      root
+      # username: root
+      # password: afham@821
