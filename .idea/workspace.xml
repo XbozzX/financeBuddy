@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e64170e-293f-4d04-bc3a-94e2fbbe41e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smart-expense-tracker-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/AGENTS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/CLAUDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-expense-tracker-service/web/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/smart-expense-tracker-service" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3D72YKFsghtvoid8lCvStNWKrpR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/FIN-1-be-create-transactions",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e64170e-293f-4d04-bc3a-94e2fbbe41e2" name="Changes" comment="" />
+      <created>1777618834750</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777618834750</updated>
+    </task>
+    <servers />
+  </component>
+</project>
