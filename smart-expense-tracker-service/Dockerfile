@@ -11,6 +11,6 @@ WORKDIR /app
 EXPOSE 8080
 
 COPY --from=builder /app/target/*.jar app.jar
-CMD [ "java", "-jar",  "ap.jar"]
+CMD [ "java", "-jar",  "app.jar"]
 
 

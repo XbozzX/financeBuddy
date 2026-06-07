@@ -5,20 +5,21 @@ services:
   backend:
     build: ./smart-expense-tracker-service
     # restart: always
+    env_file:
+      - .env
     ports:
-      - 8080:8080
+      - ${PORT}
 
-  database:
-    image: postgres:15
-    # restart: always
-    ports:
-      - 5432:5432
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: root
-      POSTGRES_DB: postgres
-    volumes:
-      - db_data:/var/lib/postgresql/data
+      SPRING_DATASOURCE_URL: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}?user=${DB_USER}&password=${DB_PASSWORD}
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+
+      # Also force Flyway to use the exact same configurations
+      SPRING_FLYWAY_URL: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}?user=${DB_USER}&password=${DB_PASSWORD}
+      SPRING_FLYWAY_USER: ${DB_USER}
+      SPRING_FLYWAY_PASSWORD: ${DB_PASSWORD}
+      SPRING_FLYWAY_SCHEMAS: public
 
 volumes:
   db_data:

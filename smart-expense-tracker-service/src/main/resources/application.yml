@@ -10,16 +10,9 @@ spring:
     port: 8080
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
     driverClassName: org.postgresql.Driver
     hikari:
-      schema: postgres
-
-  # datasource:
-  #   url: jdbc:mysql://localhost:3306/ump_transaction
-  #   driverClassName: com.mysql.cj.jdbc.Driver
-  #   hikari:
-  #     schema: ump_transaction
+      schema: ump_transaction
 
   jpa:
     hibernate:
@@ -31,6 +24,9 @@ spring:
     locations: classpath:db/migration/structure, classpath:db/migration/data # the location where flyway should look for migration scripts
     validate-on-migrate: true
     default-schema: ump_transaction
+    schemas: public
+    table: flyway_schema_history
+    baseline-description: true
 
   logging:
     level:
