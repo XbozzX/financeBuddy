@@ -1,13 +1,20 @@
 package com.unemployedgroup.smartexpensetracker.service.impl;
 
+import com.unemployedgroup.smartexpensetracker.controller.Transaction;
 import com.unemployedgroup.smartexpensetracker.model.entity.TransactionEntity;
 import com.unemployedgroup.smartexpensetracker.model.request.CreateTransactionRequest;
+import com.unemployedgroup.smartexpensetracker.model.request.GetTransactionRequest;
 import com.unemployedgroup.smartexpensetracker.model.response.CreateTransactionResponse;
+import com.unemployedgroup.smartexpensetracker.model.response.GetTransactionResponse;
 import com.unemployedgroup.smartexpensetracker.repository.TransactionRepository;
 import com.unemployedgroup.smartexpensetracker.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
 
 @Service
 @Transactional
@@ -34,5 +41,26 @@ public class TransactionServiceImpl implements TransactionService {
 
         return new CreateTransactionResponse("created!");
     }
-}
 
+    @Override
+    public GetTransactionResponse getTransaction() {
+
+        List<GetTransactionRequest> transactionList = transactionRepository.findAll()
+                .stream()
+                .map( transaction -> new GetTransactionRequest(
+                        transaction.getId(),
+                        transaction.getCategory_id(),
+                        transaction.getAmount(),
+                        transaction.getType(),
+                        transaction.getTransaction_date(),
+                        transaction.getMerchant_or_source(),
+                        transaction.getNote(),
+                        transaction.getInput_method(),
+                        transaction.getReceipt_upload_id(),
+                        transaction.getVoice_entry_id()
+                ))
+                . toList();
+
+        return new GetTransactionResponse(transactionList);
+    }
+}
